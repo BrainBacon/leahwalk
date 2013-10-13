@@ -1,0 +1,145 @@
+/* ===== Primary Styles ========================================================
+   Author: Brian Jesse
+   ========================================================================== */
+
+@footer-height: 100px;
+
+* {
+  margin: 0;
+}
+html,
+body,
+.container,
+.row,
+.left-container,
+.right-inner,
+.right-container,
+.wrapper {
+    height: 100%;
+}
+body {
+    font-family: 'Droid Sans', sans-serif;
+    color: #754b8c;
+    background-color: #b490b3;
+}
+.btn,
+.btn:hover {
+    color: #754b8c;
+}
+.container {
+    padding: 0;
+    margin: 0;
+}
+.right-container {
+    margin-left: 0 !important;
+}
+.left-container {
+    background: transparent;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto (0 - (@footer-height + 20));
+    background-color: #fefefd;
+}
+.content {
+    padding: 20px;
+}
+footer,
+.footer,
+.push {
+    height: @footer-height;
+}
+footer {
+    p {
+        float: right;
+        padding-right: 20px;
+    }
+    hr {
+        border-top: 1px solid #cfb8b3;
+        border-bottom: 1px solid #fefefd;
+    }
+}
+#flower {
+    max-width: none;
+    float: right;
+    position: relative;
+    height: 500px;
+    width: auto;
+    left: 120px;
+    bottom: 420px;
+}
+.align-center {
+    text-align: center;
+}
+.header {
+    background-color: #754b8c;
+    padding-bottom: 20px;
+}
+.header h1 {
+    color: #b490b3;
+    text-shadow: 2px -1px 1px #fefefd;
+    font-family: 'Droid Serif', serif;
+}
+.header .btn {
+    margin-top: 20px;
+}
+.jumbotron {
+    .btn {
+        color: #7c545f;
+    }
+    .icon-facebook-sign {
+        color: #3B5998;
+        padding-right: 5px;
+    }
+}
+#leah {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.well {
+    background-color: #CFB8B3;
+    p,
+    .site {
+        margin-right: 70px;
+    }
+}
+footer p {
+    position: relative;
+    left: 240px;
+}
+
+//phone specific layout
+@media (max-width: 768px) {
+    .well {
+        p,
+        .site {
+            margin-right: 0;
+        }
+    }
+    footer p {
+        position: static;
+        left: 0;
+    }
+    body {
+        padding: 0;
+    }
+    .header {
+        padding: 10px;
+    }
+    .well p {
+        padding-right: 0;
+    }
+}
+
+//ie7 specific layout
+.lt-ie8 {
+    #flower {
+        display: none;
+    }
+    .wide {
+        position: static;
+    }
+}
