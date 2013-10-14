@@ -30,7 +30,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="left-container col-md-9">
+            <div class="left-container col-lg-10 col-md-11 col-sm-12 col-xs-12">
                 <div class="wrapper">
                     <div class="content">
                         <div class="header jumbotron">
@@ -43,23 +43,24 @@
                             </div>
                         </div>
                         <div class="well">
-                            <!--(if target rev)>-->
-                                <img id="leah" src="/images/leah.jpg?v={{version}}&bt={{buildtime}}" />
-                            <!--<!(endif)-->
+                            <img id="leah" src="/images/leah.jpg" />
                             <h2>2nd Annual Leahwalk</h2>
                             <p>Have you lost someone to suicide? Would you like to honor that person? Will you stand up for mental health in our community?</p>
-                            <p>You are needed to help make this community more responsive to suicide:</p>
-                            <p>Join us on Sunday, December 1st, 2013 in Bloomington-Normal, IL.</p>
+                            <p>You are needed to help make this community more responsive to depression:</p>
+                            <p>Join us on <strong>Sunday, December 1st, at 3pm, 2013</strong> in Bloomington-Normal, IL.</p>
+                            <p><em>Our Thanksgiving LeahWalk will be Outdoors in Nature, on Constitution Trail, as a celebration of life, and a counterbalance to the intervening frenzy of Black Friday.</em></p>
                             <div class="clearfix"></div>
-                            <p><strong>Watch</strong> for our monthly news bulletins on leahwalk.com.</p>
-                            <p><strong>Sign Up</strong> in support of our efforts by:</p>
-                            <p><strong>Telling</strong> your story.</p>
-                            <p><strong>Giving</strong> to support a “Crisis Team”.</p>
-                            <p><strong>Joining</strong> and volunteering at our LeahWalk.</p>
+                            <ul>
+                                <li><strong>Watch</strong> for our monthly news bulletins on leahwalk.com.</li>
+                                <li><strong>Sign Up</strong> in support of our efforts by:</li>
+                                <li><strong>Giving</strong> to support a “Crisis Team”.</li>
+                                <li><strong>Joining</strong> and volunteering at our LeahWalk.</li>
+                                <li><strong>Sharing</strong> your story.</li>
+                            </ul>
                         </div>
                         <div class="well">
                             <h2>Donate</h2>
-                            <p> Send checks payable to LeahWalk Foundation, Heartland Bank, Normal, IL 61761</p>
+                            <p>Send checks payable to LeahWalk Foundation, Heartland Bank, Normal, IL 61761</p>
                             <p>(Please tell us about yourself and why you are interested in mental health.)</p>
                             <p>100% of donations will go to a crisis team who will develop a protocol in our community for recognizing, and personally and immediately intervening when a suicide is contemplated.</p>
                         </div>
@@ -81,15 +82,13 @@
                         <div class="clearfix"></div>
                         <footer>
                             <hr />
-                            <!--(if target rev)>-->
-                                <img class="hidden-xs" id="flower" src="/images/leahwalk-small.png?v={{version}}&bt={{buildtime}}" />
-                            <!--<!(endif)-->
+                            <img class="hidden-xs" id="flower" src="/images/leahwalk-small.png" />
                             <p>&copy; Brian Jesse <span id="copy">2012</span></p>
                         </footer>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 hidden-xs"></div>
+            <div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
         </div>
     </div>
     <script>document.getElementById('copy').innerText=new Date().getFullYear();</script>
